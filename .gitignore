@@ -1,0 +1,16 @@
+# Ignore node_modules
+**/node_modules
+
+# Ignore pnpm-lock.yaml
+**/pnpm-lock.yaml
+
+# Ignore built output for TypeScript
+**/dist/
+**/build/
+
+# Ignore Environment-specific Config
+**/.env
+**/.env.local
+**/.env.development
+**/.env.test
+**/.env.production

@@ -1,0 +1,21 @@
+{
+  "name": "mongod-puzzle",
+  "version": "1.0.0",
+  "description": "A collection of simple puzzles to reinforce theoretical knowledge in MongoDB through practice",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx tsx --watch src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "20.8.10",
+    "tsx": "3.14.0",
+    "typescript": "5.2.2"
+  },
+  "dependencies": {
+    "dotenv": "16.3.1",
+    "mongoose": "8.0.0"
+  }
+}
