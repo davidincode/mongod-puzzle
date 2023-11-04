@@ -3,6 +3,7 @@ import { MONGODB_CONNECTION_STRING } from './config';
 import { insertInitialData } from './helper/script';
 
 import { Restaurant } from './model/Restaurant';
+import { puzzleI } from './puzzle/1';
 
 connect().catch((error: unknown) => console.error(error));
 
@@ -19,4 +20,5 @@ async function connect() {
       });
   }
   console.info('All ready to go!');
+  puzzleI();
 }

@@ -4,13 +4,21 @@
   "description": "A collection of simple puzzles to reinforce theoretical knowledge in MongoDB through practice",
   "main": "index.js",
   "scripts": {
-    "start": "npx tsx --watch src/index.ts"
+    "start": "npx tsx --watch src/index.ts",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "@babel/preset-typescript": "^7.23.2",
+    "@jest/globals": "^29.7.0",
     "@types/node": "20.8.10",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "ts-node": "^10.9.1",
     "tsx": "3.14.0",
     "typescript": "5.2.2"
   },
