@@ -1,4 +1,4 @@
-import mongoose, { mongo } from 'mongoose';
+import mongoose from 'mongoose';
 import { MONGODB_CONNECTION_STRING } from './config';
 import { insertInitialData } from './helper/script';
 
