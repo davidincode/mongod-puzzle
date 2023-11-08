@@ -1,13 +1,12 @@
-import mongoose from 'mongoose';
+import mongoose, { mongo } from 'mongoose';
 import { MONGODB_CONNECTION_STRING } from './config';
 import { insertInitialData } from './helper/script';
 
 import { Restaurant } from './model/Restaurant';
-import { puzzleI } from './puzzle/1';
 
 connect().catch((error: unknown) => console.error(error));
 
-async function connect() {
+export async function connect() {
   await mongoose.connect(MONGODB_CONNECTION_STRING as string);
   console.info('Connected to MongoDB');
   if ((await Restaurant.countDocuments()) === 0) {
@@ -20,5 +19,8 @@ async function connect() {
       });
   }
   console.info('All ready to go!');
-  puzzleI();
+}
+
+export async function disconnect() {
+  await mongoose.disconnect();
 }
