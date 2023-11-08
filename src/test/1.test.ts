@@ -11,7 +11,7 @@ describe('Puzzle 1', () => {
       expect(restaurantCollection).not.toBeNull();
     });
   });
-  test('The first restaurant should be Morris Park Bake Shop', async () => {
+  test('The first restaurant must be Morris Park Bake Shop', async () => {
     const restaurantCollection = await puzzleI();
     expect(restaurantCollection[0].name).toBe('Morris Park Bake Shop');
   });
